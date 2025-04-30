@@ -1,6 +1,6 @@
 # JSP Webshell Scanner for SAP CVE-2025-31324
 
-A lightweight Bash script to scan `.jsp` files for suspicious patterns typically associated with JSP-based webshells, including those observed in attacks exploiting **SAP NetWeaver CVE-2025-31324**.
+A lightweight script to scan `.jsp` files for suspicious patterns typically associated with JSP-based webshells, including those observed in attacks exploiting **SAP NetWeaver CVE-2025-31324**.
 
 ## 🚨 What It Detects
 
@@ -17,14 +17,17 @@ The scanner hunts for JSP files that contain patterns like:
 
 ## 🔧 How to Use
 
-1. **Clone the repo** or [download the script](detect_webshells.sh):
+1. Linux: **Clone the repo** or [download the script](detect_webshells.sh):
    ```bash
-   git clone https://github.com/respondiq/jsp-webshell-scanner.git
-   cd jsp-webshell-scanner
-   chmod +x detect_webshells.sh
+      chmod +x detect_webshells.sh
+      ./detect_webhsells.sh
+2. Windows: **Clone the repo** or [download the script](detect_webshells.ps1)
+   ```powershell
+   ./detect_webshells.ps1
 
 ## 📌 Example Output
 
+For Linux:
 ```bash
 🔍 Pattern: Runtime.getRuntime(
 /usr/sap/OP1/J31/work/suspicious.jsp:13: out.println(Runtime.getRuntime().exec(cmd));
@@ -32,6 +35,7 @@ The scanner hunts for JSP files that contain patterns like:
 🔍 Pattern: request.getParameter(
 /usr/sap/OP1/J31/work/shell.jsp:9: String cmd = request.getParameter("cmd");
 ```
+For Windows: 
 
 ## ⚠️ Disclaimer
 
