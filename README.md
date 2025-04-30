@@ -32,7 +32,6 @@ The scanner hunts for JSP files that contain patterns like:
 🔍 Pattern: request.getParameter(
 /usr/sap/OP1/J31/work/shell.jsp:9: String cmd = request.getParameter("cmd");
 
-
 ## ⚠️ Disclaimer
 
 This script is provided **as-is**, without any warranties, guarantees, or liability of any kind. It is intended as a **quick triage tool** to assist in the initial identification of suspicious `.jsp` files, especially those that may resemble webshells related to vulnerabilities like **CVE-2025-31324**.
@@ -44,7 +43,6 @@ It is **not** a comprehensive detection or forensic solution.
 - Use this tool as a **first step** in your investigation process, and follow up with full manual review, logging analysis, and endpoint forensics as required.
 
 **You are solely responsible** for how you interpret and act on the findings. This project is shared in good faith and for community benefit, but **use is entirely at your own risk**.
-
 
 ## 🙌 Contributing
 
