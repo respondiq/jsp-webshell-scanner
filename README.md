@@ -19,7 +19,7 @@ The scanner hunts for JSP files that contain patterns like:
 
 1. **Clone the repo** or [download the script](detect_webshells.sh):
    ```bash
-   git clone https://github.com/yourusername/jsp-webshell-scanner.git
+   git clone https://github.com/respondiq/jsp-webshell-scanner.git
    cd jsp-webshell-scanner
    chmod +x detect_webshells.sh
 
@@ -31,6 +31,7 @@ The scanner hunts for JSP files that contain patterns like:
 
 🔍 Pattern: request.getParameter(
 /usr/sap/OP1/J31/work/shell.jsp:9: String cmd = request.getParameter("cmd");
+```
 
 ## ⚠️ Disclaimer
 
